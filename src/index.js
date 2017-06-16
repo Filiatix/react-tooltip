@@ -234,7 +234,8 @@ class ReactTooltip extends Component {
       // Don't trigger other elements belongs to other ReactTooltip
       const targetArray = this.getTargetArray(this.props.id)
       const isMyElement = targetArray.some(ele => ele === e.currentTarget)
-      if (!isMyElement || this.state.show) return
+      //if (!isMyElement || this.state.show) return
+      if (!isMyElement || false) return //temporary fix for state show
     }
     // Get the tooltip content
     // calculate in this phrase so that tip width height can be detected
